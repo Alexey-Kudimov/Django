@@ -1,0 +1,8 @@
+{% block content %}
+{% for review in reviews %}
+    <h1>Review book: {{review.book}}</h1>
+    <h2>Review id: {{review.id}}</h2>
+    <h2>Review user: {{review.user}}</h2>
+    <h2>Review text: {{review.text}}</h2>
+{% endfor %}
+{% endblock %}
